@@ -1,8 +1,10 @@
 .main_body {
+  position: relative; /* 确保子元素绝对定位时基于此容器 */
   margin: 0 auto;
   padding: 0;
   border: 1px solid #000;
   box-sizing: border-box;
+  overflow: hidden; /* 防止溢出内容影响布局 */
 }
 
 .body_center {
@@ -41,30 +43,41 @@
   left: 50%; /* 水平居中 */
   transform: translate(-50%, -50%); /* 调整位置以真正居中 */
   color: white; /* 设置文本颜色以便在视频上可见 */
-  z-index: 1; /* 确保内容在视频上方 */
+  z-index: 2; /* 确保内容在视频上方 */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.button-container {
+.main_button-container {
   display: flex; /* 设置为 flexbox 容器 */
-  flex-direction: row; /* 确保子元素横向排列 */
+  flex-direction: row;
   justify-content: center; /* 子元素居中对齐 */
-  align-items: center; /* 垂直方向居中对齐 */
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  list-style-type: none; /* Remove default list styling */
+  /* flex-wrap: nowrap; 禁止按钮换行 */
+  width: 100%;
+  /* align-items: flex-start; 垂直方向居中对齐 */
 }
 
 .main_number_button {
   display: flex; /* Use flexbox */
   justify-content: center;
   align-items: center;
-  list-style-type: none; /* Remove default list styling */
   padding: 10px; /* Add some padding inside the box */
   margin: 0; /* Remove default margin */
   border: 2px solid transparent; /* Make border transparent */
-  border-radius: 8px; /* Optional: Rounded corners */
+  border-radius: 50%; /* Optional: Rounded corners */
   font-size: 20px; /* Set font size to 20px */
-  width: 300px; /* Set a specific width for the box */
-  background-color: yellow; /* Set background to transparent */
+  gap: 0;
+  width: 30px; /* Set a specific width for the box */
+  height: 30px;
+  background-color: rgb(229, 108, 52); /* Set background to transparent */
   cursor: pointer; /* Change cursor to pointer */
   box-shadow: 0px 4px 0px 0px white; /* Add a white line at the bottom */
-  color: black;
+  color: rgb(0, 0, 0);
 }
