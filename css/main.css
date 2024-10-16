@@ -7,15 +7,6 @@
   overflow: hidden; /* 防止溢出内容影响布局 */
 }
 
-.body_center {
-  display: flex; /* Use flexbox layout */
-  flex-direction: column; /*Align items in a column */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  width: 100%; /* Full width */
-  margin: 0; /* Remove default margin */
-}
-
 .video-background {
   position: relative; /* 让视频固定在背景 */
   width: 1100px; /* 占满宽度 */
@@ -51,7 +42,53 @@
   align-items: center;
 }
 
-.main_button-container {
+.main_show_button {
+  display: flex; /* Use flexbox */
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Add some padding inside the box */
+  margin: 0; /* Remove default margin */
+  border: 2px solid transparent; /* Make border transparent */
+  border-radius: 8px; /* Optional: Rounded corners */
+  font-size: 20px; /* Set font size to 20px */
+  gap: 0px;
+  width: 100px; /* Set a specific width for the box */
+  height: 30px;
+  background-color: rgb(90, 168, 44); /* Set background to transparent */
+  cursor: pointer; /* Change cursor to pointer */
+  box-shadow: 0px 4px 0px 0px white; /* Add a white line at the bottom */
+  color: rgb(0, 0, 0);
+}
+
+.main_function_button-container {
+  display: flex; /* 覆盖默认的 display: block */
+  justify-content: center; /* 子元素居中对齐 */
+  align-items: center; /* 垂直方向居中对齐 */
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  list-style-type: none; /* 移除默认项目符号 */
+}
+
+.main_function_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  border: 2px solid transparent; /* Make border transparent */
+  border-radius: 8px; /* Optional: Rounded corners */
+  font-size: 20px; /* Set font size to 20px */
+  gap: 0px;
+  width: 100px; /* Set a specific width for the box */
+  height: 30px;
+  background-color: rgb(90, 168, 44); /* Set background to transparent */
+  cursor: pointer; /* Change cursor to pointer */
+  box-shadow: 0px 4px 0px 0px white; /* Add a white line at the bottom */
+  color: rgb(0, 0, 0);
+}
+
+.main_number_button-container {
   display: flex; /* 设置为 flexbox 容器 */
   flex-direction: row;
   justify-content: center; /* 子元素居中对齐 */
