@@ -9,46 +9,52 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body class="main-inner main_body">
-    <div class="body_center video-background">
+    <div class="video-background">
       <video autoplay muted loop id="bg-video">
         <source src="../assets/background_1.mp4" type="video/mp4">
       </video>
     </div>
 
     <div class="overlay-content">
-        <div>Settings</div>
-        <div>Turns</div>
+        <div class="main_head-container">
+          <div class="main_head_logo_rotate">
+            <img src="../assets/Logo.jpg" class="main_head_logo_img" />
+          </div>
+  
+        </div>
+        <div class="main_turns_button-container">
+            <li class="main_turns_button">Turns:0</li>
+        </div>
         <div>
-          <ul>
-            <li>1</li>
-            <li>"<"</li>
-            <li>input</li>
-            <li>"<"</li>
-            <li>1000</li>
+          <ul class="main_show_button-container">
+            <li class="main_show_button"><h1> 1</h1></li>
+            <li class="main_show_symbol">&lt</li>
+            <li class="main_show_input_button"><h1>Number</h1></li>
+            <li class="main_show_symbol"> &lt</li>
+            <li class="main_show_button"><h1> 100</h1></li>
           </ul>
         </div>
         <div>
-          <ul class="main_button-containern">
-            <li>Speak</li>
-            <li>Guess</li>
-            <li>Clear</li>
+          <ul class="main_function_button-container"">
+            <li class="main_function_button">Restart</li>
+            <li class="main_function_button">Guess</li>
+            <li class="main_function_button">Clear</li>
           </ul>
           </div>
-          <div>
-            <ul class="main_button-containern">
-              <li class="main_number_button">0</li>
-              <li class="main_number_button">1</li>
-              <li class="main_number_button">2</li>
-              <li class="main_number_button">3</li>
-              <li class="main_number_button">4</li>
-              <li class="main_number_button">5</li>
-              <li class="main_number_button">6</li>
-              <li class="main_number_button">7</li>
-              <li class="main_number_button">8</li>
-              <li class="main_number_button">9</li>
+        <div>
+            <ul class="main_number_button-container">
+              <li class="main_number_button" style="background-color: rgb(184, 80, 45);">0</li>
+              <li class="main_number_button" style="background-color: rgb(179, 137, 45);">1</li>
+              <li class="main_number_button" style="background-color: rgb(210, 207, 53);">2</li>
+              <li class="main_number_button" style="background-color: rgb(36, 142, 52);">3</li>
+              <li class="main_number_button" style="background-color: rgb(42, 163, 169);">4</li>
+              <li class="main_number_button" style="background-color: rgb(68, 105, 224);">5</li>
+              <li class="main_number_button" style="background-color: rgb(179, 60, 218);">6</li>
+              <li class="main_number_button" style="background-color: rgb(166, 199, 48);">7</li>
+              <li class="main_number_button" style="background-color: rgb(52, 162, 196);">8</li>
+              <li class="main_number_button" style="background-color: rgb(229, 108, 52);">9</li>
             </ul>
-          </div>
-        </div>
+          </div>        
     </div>
   </body>
 </html>
