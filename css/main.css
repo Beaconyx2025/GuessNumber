@@ -9,7 +9,7 @@
 
 .video-background {
   position: relative; /* 让视频固定在背景 */
-  width: 1100px; /* 占满宽度 */
+  width: 900px; /* 占满宽度 */
   height: 700px; /* 占满高度 */
   overflow: hidden; /* 隐藏多余部分 */
   z-index: -1; /* 将视频置于内容后 */
@@ -114,7 +114,7 @@
   display: flex; /* 覆盖默认的 display: block */
   justify-content: center; /* 子元素居中对齐 */
   align-items: center; /* 垂直方向居中对齐 */
-  padding: 0 0 0 50px;
+  padding: 0;
   margin: 0;
   gap: 15px;
   list-style-type: none; /* 移除默认项目符号 */
@@ -128,9 +128,9 @@
   align-items: center;
   padding: 10px; /* Add some padding inside the box */
   margin: 0; /* Remove default margin */
-  border-left: 75px solid transparent; /* 左边框 */
-  border-right: 75px solid transparent; /* 右边框 */
-  border-top: 70px solid rgba(224, 170, 226, 0.8);
+  border-left: 50px solid transparent; /* 左边框 */
+  border-right: 50px solid transparent; /* 右边框 */
+  border-top: 45px solid rgba(224, 170, 226, 0.8);
   font-size: 20px; /* Set font size to 20px */
   box-shadow: 0px 8px 0px 0px rgba(255, 255, 255, 0.8); /* Add a white line at the bottom */
   color: rgb(232, 220, 90);
@@ -144,9 +144,9 @@
   align-items: center;
   padding: 10px; /* Add some padding inside the box */
   margin: 0; /* Remove default margin */
-  border-left: 75px solid transparent; /* 左边框 */
-  border-right: 75px solid transparent; /* 右边框 */
-  border-bottom: 70px solid rgba(80, 161, 202, 0.8);
+  border-left: 50px solid transparent; /* 左边框 */
+  border-right: 50px solid transparent; /* 右边框 */
+  border-bottom: 45px solid rgba(80, 161, 202, 0.8);
   font-size: 20px; /* Set font size to 20px */
   cursor: pointer; /* Change cursor to pointer */
   box-shadow: 0px 8px 0px 0px rgba(255, 255, 255, 0.8); /* Add a white line at the bottom */
@@ -165,10 +165,9 @@
   border-radius: 50%; /* Optional: Rounded corners */
   font-size: 50px; /* Set font size to 20px */
   gap: 0px;
-  width: 60px; /* Set a specific width for the box */
-  height: 60px;
+  width: 50px; /* Set a specific width for the box */
+  height: 50px;
   background-color: rgba(101, 228, 75, 0.8); /* Set background to transparent */
-  cursor: pointer; /* Change cursor to pointer */
   box-shadow: 0px 8px 0px 0px rgba(255, 255, 255, 0.8); /* Add a white line at the bottom */
   color: rgb(0, 0, 0);
 }
