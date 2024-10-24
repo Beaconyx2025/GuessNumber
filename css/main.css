@@ -198,8 +198,8 @@
   border: 2px solid transparent; /* Make border transparent */
   border-radius: 8px; /* Optional: Rounded corners */
   font-size: 20px; /* Set font size to 20px */
-  width: 100px; /* Set a specific width for the box */
-  height: 30px;
+  width: 80px; /* Set a specific width for the box */
+  height: 15px;
   background-color: rgba(209, 186, 54, 0.8); /* Set background to transparent */
   cursor: pointer; /* Change cursor to pointer */
   box-shadow: 0px 8px 0px 0px rgba(255, 255, 255, 0.8); /* Add a white line at the bottom */
@@ -215,18 +215,21 @@
   font-size: 18px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 .main_function_button_style_guess {
   background-color: rgba(127, 240, 131, 0.993);
   font-size: 18px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 .main_function_button_style_clear {
   background-color: rgba(240, 204, 163, 0.993);
   font-size: 18px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .main_number_button-container {
